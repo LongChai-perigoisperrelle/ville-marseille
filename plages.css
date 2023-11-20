@@ -1,0 +1,345 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 20;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c3/Playa_de_la_Punta_Roja%2C_Marsella%2C_Francia%2C_2016-06-22%2C_DD_10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    height: 400px;
+    /*background-image: url(https://images.squarespace-cdn.com/content/v1/64474b4b33b1a9145d20c1bc/5f29f17e-88b5-4801-924a-d5eb018d5df9/unsplash-image-YXXqJ26UZ2g.jpg?format=1000w);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    padding: 0;
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    position: relative;
+    overflow: hidden;
+}
+
+#vprado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Para que el video esté detrás del contenido */
+}
+
+#Marseilleprado {
+    width: 100% !important;
+    /* min-height: 100%; */
+    width: auto;
+    height: 500px;
+    z-index: -1;
+}
+
+.content h1 {
+    color: white;
+    opacity: 1; /* Ajusta la opacidad según tus necesidades */
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+    mix-blend-mode: overlay;
+}
+
+.primero {
+    color: #fff;
+    margin: 10px;
+    margin-top: 50px;
+    padding: 15px;
+    /**background-image: url(https://media.istockphoto.com/photos/caprera-island-and-spiaggia-di-cala-portese-harbor-at-the-tyrrhenian-picture-id1212549825?k=6&m=1212549825&s=170667a&w=0&h=JvtzUOqUEMpWKY-DiZPiB7Ql00WbkPxj_15FP-ufgvw=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;*/
+}
+  
+
+.naycir {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1 {
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+}
+
+.titre {
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.inicio {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding-right: 50px;
+    font-weight: 600;
+    background-color: skyblue;
+    align-items: center;
+}
+
+.links {
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.buscar {
+    position: relative;
+}
+
+input {
+    outline: none;
+    box-sizing: border-box;
+    height: 60px;
+    width: 0;
+    padding: 0 20px;
+    color: #000;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 1px solid #fff;
+    transition: all .7 ease;
+}
+
+::placeholder {
+    color: grey;
+}
+
+form input {
+    height: 30px;
+}
+
+.btn {
+    position: relative;
+    background: #fff;
+    line-height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn i {
+    font-size: 25px;
+    color: #fff;
+    line-height: 40px;
+    transition: all .7s ease;
+}
+
+.buscar:hover input {
+    width: 350px;
+}
+
+.buscar:hover i {
+    transform: rotate(-360deg);
+}
+
+.btn:hover {
+    background: #fff;
+}
+
+.links a {
+    margin: 10px;
+}
+
+.actividades {
+    margin: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.actividades p {
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.linea {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.titulazo {
+    color: #fff;
+    animation: mover-izquierda-derecha 2s 5;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-shadow: #fff;
+}
+
+.texto {
+    position: absolute;
+    transform: translateY(-500px);
+    color: #fff;
+    text-decoration-color: #fff;
+    text-shadow: #000;
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding: 15px;
+    margin-left: 110px;
+    margin-right: 150px;
+    font-size: 15px;
+ 
+}
+
+@keyframes mover-izquierda-derecha {
+    from{
+        transform: translateX(-100px);
+    }
+    to{
+        transform: translateX(10px);
+    }
+}
+
+h3 {
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+h4 {
+    text-decoration-line: underline;
+    margin-bottom: 6px;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-between; /* Distribuir el espacio entre las columnas */
+}
+
+.column {
+    width: 30%; /* Ancho de cada columna */
+    padding: 10px; /* Espaciado interno para mejorar la legibilidad */
+    border: 1px solid #ccc; /* Borde para visualización */
+    background-color: rgb(236, 248, 252);
+}
+
+.opiniones {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between; /* Distribuir el espacio entre las columnas */
+}
+
+.opiniones h3 {
+    color: #333;
+}
+
+.opiniones ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.opiniones li {
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/*imagenes prado*/
+
+.gallery {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga de la forma circular */
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.gallery img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    transition: 0.5s;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Define 3 columnas de igual ancho */
+    gap: 10px; /* Espacio entre las imágenes */
+    gap: 50px;
+}
+
+.full-width-image {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto;
+}
+
+.cabeza {
+    max-width: 1010px;
+    margin: 0 auto;
+    padding: 20px;
+    /*background-image: url(https://th.bing.com/th/id/OIP.grgJLnWZ3zJ7o9sGjBLRIQHaEH?pid=ImgDet&w=474&h=263&rs=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;*/
+}
+
+/* Styles pour les écrans de petite taille */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Styles pour les écrans de taille moyenne */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Styles pour les écrans larges */
+@media screen and (min-width: 1025px) {
+    body {
+        font-size: 20px;
+    }
+}

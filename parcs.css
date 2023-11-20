@@ -1,0 +1,217 @@
+/* Reset de estilos */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, p {
+    margin-top: 15px;
+}
+
+h2, h3, h4, h5 {
+    color: rgb(15, 188, 15);
+    margin-top: 30px;
+}
+
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #fff(18, 1, 1, 0.495);
+}
+
+.cuerpo {
+    background-color: #fff;
+    margin-left: 120px;
+    margin-right: 90px;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: skyblue;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilo del banner */
+.banner {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background-image: url(https://www.malagacar.com/sp/blog/wp-content/uploads/2016/12/Parque-Arroyo-de-la-Represa-by-Charly-Simon-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-content {
+    position: relative;
+
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.banner-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Estilo de las características */
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+    background-color: #fff;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.feature h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1em;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer-links ul li {
+    margin-right: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*Lo que voy a agregar yo a partir de ahora*/
+
+.uno {
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.dos {
+    background-color: #fff;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 30px;
+}
+
+.principal {
+    margin-right: 40px;
+    margin-left: 40px;
+    color: #000;
+}
+
+ol {
+    list-style-type: none;
+}
+
+.tres {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.tres::before {
+    content: '\2192'; /* Código unicode para una flecha hacia la derecha */
+    margin-right: 8px; /* Espaciado opcional entre la flecha y el texto del elemento de lista */
+}
+
+a {
+    color: rgb(12, 201, 12);
+}
+
+.link {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles pour les écrans de petite taille */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Styles pour les écrans de taille moyenne */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Styles pour les écrans larges */
+@media screen and (min-width: 1025px) {
+    body {
+        font-size: 20px;
+    }
+}

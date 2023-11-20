@@ -1,0 +1,98 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-attachment: fixed;
+    color: #ffffff;
+    margin: 0;
+    background-image: url(Vieux-Port.jpg);
+    margin: 0 auto;
+    text-shadow: 6px 6px 6px #000;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header {
+    background-color: #00a8e8;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    background-image: url(Ciel.jpg);
+    animation: bounce 0s infinite;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.image-container img {
+    max-width: 48%;
+    border: 6px solid #000000;
+    border-radius: 18px;
+}
+
+#videos {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#videos iframe {
+    max-width: 100%;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+}
+    to {
+        opacity: 1;
+}
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+nav {
+    background-color: #fffafa;
+    color: #ffeeee;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+
+}
+
+video {
+        display: block;
+        margin: auto;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
